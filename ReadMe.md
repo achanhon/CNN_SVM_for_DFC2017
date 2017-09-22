@@ -1,6 +1,7 @@
 # OFF THE SHELF DEEP LEARNING PIPELINE FOR DFC2017
 
 The provided code allows to replicate some of the experiment from the paper "Off the shelf deep learning pipeline for remote sensing applications" published in BID2017 (http://bigdatafromspace2017.org/).
+
 The code is provided for research only.
 (Contact ONERA for commercial purpose)
 
@@ -25,13 +26,16 @@ See the paper for detail.
 
 ## COMPILING AND EXECUTING
 You need to have cuda compiled + the caffemodel of vgg16 (https://gist.github.com/ksimonyan/211839e770f7b538e2d8)
+
 Adapt the CMakefile to have the path be correct.
+
 L124 of the .cpp -> adapt the path to caffe model of vgg16
+
 In the main function -> adapt the path to the data
 
 ## LIMITATION
 
-** CODE IS NOT CROSS PLATEFORM - IT HAS BEEN TESTED ON UBUNTU 16.04 ONLY**
+**CODE IS NOT CROSS PLATEFORM - IT HAS BEEN TESTED ON UBUNTU 16.04 ONLY**
 
 We have observed crucial numerical instability on the OSM data depending on the hardware used to compute the feature **AND** we observed crucial numerical instability between windows/linux.
 However, on my computer it leads to the result indicated in the paper.
