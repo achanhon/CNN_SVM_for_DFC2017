@@ -121,7 +121,7 @@ void addtofiledfc2017(const string& name, const string& sentinelname, const stri
 					
 		caffe::shared_ptr<caffe::Net<float> > cnn;
 		cnn = caffe::shared_ptr<caffe::Net<float> >(new caffe::Net<float>(pathproto,caffe::TEST));
-		cnn->CopyTrainedLayersFrom("/media/achanhon/bigdata/data/imagenet/vgg16.caffemodel");
+		cnn->CopyTrainedLayersFrom("/data/imagenet/vgg16.caffemodel");
 				
 		for(int dc=0;dc<DC;dc++)
 			for(int dr=0;dr<DR;dr++){
