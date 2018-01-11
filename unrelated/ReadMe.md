@@ -1,8 +1,8 @@
 # SMUGGLING EXAMPLES
 
-This script present the first experiment on smuggling examples (05/01/2018).
+This script present the first experiment on smuggling examples (hal-id hal-01676691).
 
-Smuggling examples is a technic which allows to bias training toward a specific weight.
+Smuggling examples is a technic which allows to bias training toward a specific model.
 This could allow someone to claim following the rigorous train test paradigm while being in reality doing something close to learn on the test set.
 
 Such falsification is only possible which complete access to test set, and thus, should not be a problem in academia where leading benchmark have high standard evaluation process.
@@ -27,7 +27,9 @@ CIFAR10 : https://www.cs.toronto.edu/~kriz/cifar.html
 
 liblinear2.1 : https://www.csie.ntu.edu.tw/~cjlin/liblinear/
 
-you should create a build folder with a vgg folder containing vgg model
+you should create a build folder with a vgg folder containing vgg model, CIFAR10 and liblinear2.1
+
+then you just have to run run.sh
 
 
 
